@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Burn Rate Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📦 Inventory Burn Rate Analyzer</h1>
+    <p>Upload your inventory CSV to get insights on stock depletion</p>
+  </header>
+
+  <main class="container">
+    <input type="file" id="csvFile" accept=".csv" />
+    <button onclick="processCSV()">Analyze</button>
+
+    <div id="inventoryTableContainer"></div>
+
+    <canvas id="burnRateChart" height="100"></canvas>
+    <canvas id="stockChart" height="100"></canvas>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GlowUp Beauty Co. | Inventory Optimization Tool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
